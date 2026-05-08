@@ -1,4 +1,4 @@
-local Data = {}
+Local Data = {}
 
 Data.Build = "2.0"
 
@@ -135,7 +135,7 @@ Data.Changelogs = {
             "• Fixed Boundless Tower Bugs",
         },
 
-        Note = "Get Good, Buy Vellure"
+        Note = "Get Good, Buy Wellon" -- Изменено: Wellon
     },
     {
         Title = "Bizzare Lineage",
@@ -161,7 +161,7 @@ Data.Changelogs = {
             "[~] Fixed Hop World Event | Now More Stable",
         },
 
-        Note = "Get Good, Get Vellure"
+        Note = "Get Good, Get Wellon" -- Изменено: Wellon
     },
     {
         Title = "Bizzare Lineage",
