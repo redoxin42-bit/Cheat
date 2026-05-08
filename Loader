@@ -1,4 +1,4 @@
--- // Made by @Flames9925 | Edited by @NyxaSylph
+-- // Made by @Flames9925 | Edited by @NyxaSylph | Rebranded to Wellon
 
 local cloneref = (cloneref or clonereference or function(instance)
     return instance
@@ -17,9 +17,9 @@ LPlayer.Idled:Connect(function()
     end)
 end)
 
-local Loader = {}
+[span_0](start_span)local Wellon = {} -- Изменено с Loader на Wellon[span_0](end_span)
 
-Loader.Files = {
+Wellon.Files = {
     ["Bizzare Lineage"] = {
         File = "BA/Main.lua",
         CreatorId = 33161040
@@ -34,11 +34,12 @@ Loader.Files = {
     }
 }
 
-function Loader:LoadByCreatorId(CreatorId)
+function Wellon:LoadByCreatorId(CreatorId)
     for GameName, Data in pairs(self.Files) do
         if Data.CreatorId == CreatorId then
             
-            local Url = "https://raw.githubusercontent.com/NyxaSylph/Vellure/main/" .. Data.File
+            -[span_1](start_span)- Путь изменен с Vellure на Wellon[span_1](end_span)
+            local Url = "https://raw.githubusercontent.com/NyxaSylph/Wellon/main/" .. Data.File
             
             local Success, Result = pcall(function()
                 return loadstring(game:HttpGet(Url))()
@@ -57,5 +58,5 @@ function Loader:LoadByCreatorId(CreatorId)
     warn("UNSUPPORTED GAME 🤡")
 end
 
-Loader:LoadByCreatorId(game.CreatorId)
-return Loade
+Wellon:LoadByCreatorId(game.CreatorId)
+[span_2](start_span)return Wellon -- Исправлено: возвращает объект Wellon[span_2](end_span)
